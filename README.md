@@ -25,10 +25,14 @@ This was a group project task assigned by [Kay Lovelace](https://github.com/neoe
 * [ESLint](http://eslint.org/)
 
 ## Installation
-1. Pending
+1. Clone repo to your local machine
 
 ## Usage
-1. Pending
+1. Navigate to ```app``` run ```npm install``` to install dependencies
+2. Navigate to ```app``` directory, run ```mocha tests``` to run all tests
+3. Navigate to ```app``` directory, run ```eslint {folder name}``` to run the linter
+4. Navigate to ```app``` directory, run ```istanbul cover {test file}``` to check code coverage
+
 
 ## Authors
 
