@@ -8,10 +8,8 @@ The task layout and learning objectives can be found in ```/docs```.
 
 * address past experiences and setbacks
 
-* fulfill learning objectives
 
 * figure out, reflect and report on (Thursday's report) what 'as much design as necessary to implement improvements' means.
-
 
 * by the end of Tuesday, we hope to have completed the MVP user stories (see ```user-stories.md```)
 
