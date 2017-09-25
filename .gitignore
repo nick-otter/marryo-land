@@ -1,4 +1,4 @@
-app/npm-debug.log
-app/coverage
-app/tests/coverage
-app/node_modules
+npm-debug.log
+coverage
+tests/coverage
+node_modules
