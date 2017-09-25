@@ -12,6 +12,7 @@ The task layout and learning objectives can be found in ```/docs```.
 
 * figure out, reflect and report on (Thursday's report) what 'as much design as necessary to implement improvements' means.
 
+
 * by the end of Tuesday, we hope to have completed the MVP user stories (see ```user-stories.md```)
 
 * Will: give more feedback, deal well and quickly with any set backs timewise
@@ -42,3 +43,9 @@ This was a group project task assigned by [Kay Lovelace](https://github.com/neoe
 ## Acknowledgments
 
 * [Makers Academy](http://www.makersacademy.com/), [Kay Lovelace](https://github.com/neoeno)
+
+
+## Tech
+
+HTML5
+Javascript
