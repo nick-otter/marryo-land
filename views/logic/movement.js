@@ -1,16 +1,3 @@
-// // accesses then draws canvas
-// var canvas = document.querySelector('#myCanvas');
-// var context = canvas.getContext('2d');
-//
-//
-// // Sets location
-// var xPos = 30;
-// var yPos = 370;
-//
-// // Renders circle and line assets
-// character();
-// line();
-
 // As soon as keyboard touched, renders line 33 onwards
 function move(e){
 
