@@ -9,3 +9,11 @@ var yPos = 370;
 // Renders circle and line assets
 character();
 line();
+
+function moveandrender (){
+
+  canvas.width=canvas.width;
+  character();
+  line();
+
+};

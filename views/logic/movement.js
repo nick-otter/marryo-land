@@ -20,8 +20,6 @@ function move(e){
     yPos+=5;
   }
 
-  canvas.width=canvas.width;
-  character();
-  line();
+  moveandrender();
 
 }
