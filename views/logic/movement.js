@@ -1,15 +1,15 @@
-// accesses then draws canvas
-var canvas = document.querySelector('#myCanvas');
-var context = canvas.getContext('2d');
-
-
-// Sets location
-var xPos = 30;
-var yPos = 370;
-
-// Renders circle and line assets
-character();
-line();
+// // accesses then draws canvas
+// var canvas = document.querySelector('#myCanvas');
+// var context = canvas.getContext('2d');
+//
+//
+// // Sets location
+// var xPos = 30;
+// var yPos = 370;
+//
+// // Renders circle and line assets
+// character();
+// line();
 
 // As soon as keyboard touched, renders line 33 onwards
 function move(e){
@@ -27,7 +27,6 @@ function move(e){
   }
   if(e.keyCode==38){
     yPos-=5;
-
   }
 
   if(e.keyCode==40){
@@ -39,5 +38,3 @@ function move(e){
   line();
 
 }
-
-document.onkeydown = move;
