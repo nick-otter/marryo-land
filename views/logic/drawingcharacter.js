@@ -1,5 +1,6 @@
 
-var drawcircle = function (xCoord){
+var Drawcircle = function (xCoord){
+
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 ctx.fillStyle = ("black");
@@ -10,10 +11,11 @@ ctx.fill();
 };
 // )};
 
-var xCoordinate = 60
-
-drawcircle(xCoordinate)
-
-drawcircle.Prototype.moveXright = function () {
+Drawcircle.Prototype.moveXright = function () {
   xCoordinate += 10;
 }
+
+drawcircle = new Drawcircle
+var xCoordinate = 60
+drawcircle(xCoordinate)
+document.onkeydown = drawcircle.moveXright;
