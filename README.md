@@ -35,6 +35,13 @@ This was a group project task assigned by [Kay Lovelace](https://github.com/neoe
 4. Navigate to ```app``` directory, run ```istanbul cover {test file}``` to check code coverage
 
 
+To check test coverage Run: 
+
+```
+istanbul cover <filename>
+```
+
+
 ## Authors
 
 * [Abi Travers](https://github.com/abitravers1989)
