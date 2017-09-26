@@ -15,7 +15,7 @@ line();
 function move(e){
 
 // To find keyCode uncomment below:
-alert(e.keyCode)
+// alert(e.keyCode)
 
 // move right
   if(e.keyCode==39){
@@ -40,4 +40,4 @@ alert(e.keyCode)
 
 }
 
-move();
+document.onkeydown = move;
