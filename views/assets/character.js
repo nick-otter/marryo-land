@@ -37,23 +37,24 @@ if(e.keyCode!==38){
      yPos+=5;
    }
 
- moveandrender();}
+ moveandrender();
+}
 
 
  if(e.keyCode==38){
    for(var i = 0; i<10; i++){
-     jumpMotion(i,20,10,false)
-     jumpMotion(9-i,20,9,true);
+     jumpMotion(i,30,10,false)
+     jumpMotion(9-i,30,9,true);
    }
  }
 }
 
 
-var jumpMotion = function(j,rate,max,isDown){
-  var delay = 0, dir=1
-  if(isDown){delay=rate*max+70; dir = -1}
+var jumpMotion = function(amtToMove, stepDist, numOfUpSteps, isDown){
+  var delay = 0, upOrDown=1
+  if(isDown) { delay = stepDist*numOfUpSteps+70; upOrDown = -1 }
   setTimeout(function(){
-    yPos-=4*j*dir;
+    yPos -= 4 * amtToMove * upOrDown;
     moveandrender();
-  },(max-j)*rate+delay)
+  },(numOfUpSteps - amtToMove) * stepDist + delay)
 }
