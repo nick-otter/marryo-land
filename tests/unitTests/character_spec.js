@@ -1,11 +1,15 @@
+require 'assets/character.js'
+require 'assets/layout.js'
+require 'assets/line.js'
+
 beforeEach(function() {
+  var character = new Character;
   var canvas = document.querySelector('#myCanvas');
   var context = canvas.getContext('2d');
   var xPos = 30;
   var yPos = 370;
 });
 
-character = new Character;
 
 describe('Character', function() {
 
