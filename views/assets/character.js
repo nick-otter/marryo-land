@@ -1,4 +1,4 @@
-function character (){
+function Character (){
 
 // var c = document.getElementById("myCanvas");
 // var ctx = c.getContext("2d");
@@ -16,3 +16,28 @@ context.fill();
 // context.stroke();
 
 };
+
+Character.prototype.move= function (e){
+
+// To find keyCode uncomment below:
+// alert(e.keyCode)
+
+// move right
+ if(e.keyCode==39){
+   xPos+=5;
+ }
+//
+ if(e.keyCode==37){
+   xPos-=5;
+ }
+ if(e.keyCode==38){
+   yPos-=5;
+ }
+
+ if(e.keyCode==40){
+   yPos+=5;
+ }
+
+ moveandrender();
+
+}

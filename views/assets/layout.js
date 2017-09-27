@@ -7,13 +7,13 @@ var xPos = 30;
 var yPos = 370;
 
 // Renders circle and line assets
-character();
+var mario = new Character
 line();
 
 function moveandrender (){
 
   canvas.width=canvas.width;
-  character();
+  var mario = new Character;
   line();
 
 };
