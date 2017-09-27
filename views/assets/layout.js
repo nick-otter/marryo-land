@@ -8,6 +8,7 @@ var yPos = 370;
 
 // Renders circle and line assets
 var mario = new Character
+console.log(mario);
 line();
 
 function moveandrender (){

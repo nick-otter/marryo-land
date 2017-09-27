@@ -12,10 +12,12 @@
   "devDependencies": {
     "eslint-config-google": "^0.9.1",
     "mocha": "^3.5.3",
+    "chai": "*",
     "zombie": "^5.0.7"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+
   },
   "author": "",
   "license": "ISC"
