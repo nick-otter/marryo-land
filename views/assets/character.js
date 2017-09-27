@@ -22,7 +22,6 @@ context.fill();
 
 };
 
-
 Character.prototype.move= function (e){
 
 // To find keyCode uncomment below:

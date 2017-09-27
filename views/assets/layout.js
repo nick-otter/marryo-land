@@ -4,7 +4,6 @@ var context = canvas.getContext('2d');
 
 // Sets location
 
-
 // Renders circle and line assets
 var mario = new Character
 console.log(mario);
