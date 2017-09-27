@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Canvas</title>
+<style>
+#canvas{
+  outline: px solid #000;
+}
+</style>
+</head>
+<body>
+
+<canvas id="canvas" width="400" height="600" style="border:1px solid #d3d3d3;">
+</canvas>
+
+<script>
+
+var canvas = document.querySelector('#canvas');
+var context = canvas.getContext('2d');
+
+var xPos = 0;
+var yPos = 0;
+
+context.rect(xPos, yPos, 50, 50);
+context.stroke();
+
+var draw = function(){
+  canvas.width=canvas.width;
+  context.rect(xPos, yPos, 50, 50);
+  context.stroke();
+}
+
+var jumpMotion = function(j,rate,max,isDown){
+  var delay = 0, dir=1
+  if(isDown){delay=rate*max+70; dir = -1}
+  setTimeout(function(){
+    yPos+=4*j*dir;
+    draw();
+    console.log(yPos)
+  },(max-j)*rate+delay)
+}
+
+function blahblah(e){
+
+  if(e.keyCode==38){
+    // var theID = setInterval(function() {
+    //   yPos+=10;
+    //   draw();
+    // }, 10);
+    // setTimeout(function(){
+    //     clearInterval(theID);
+    //     console.log("stop now")
+    //   }, 200)
+    // setTimeout(function(){
+    //   var theID = setInterval(function() {
+    //     yPos-=10;
+    //     draw();
+    //   }, 10);
+    //   setTimeout(function(){
+    //         clearInterval(theID);
+    //         console.log("stop again now")
+    //       }, 200)
+    //     },200)
+
+    for(var i = 0; i<10; i++){
+      jumpMotion(i,20,10,false)
+      jumpMotion(9-i,20,9,true)
+    //   setTimeout(function(){jumpMotion(1)},10*i)
+    //   setTimeout(function(){jumpMotion(-1)},100+10*i)
+      // setTimeout(function(){
+      //   yPos-=10;
+      //   draw();
+      // },10*i+100)
+    }
+
+  }
+
+}
+
+document.onkeydown = blahblah;
+
+</script>
+</body>
+</html>

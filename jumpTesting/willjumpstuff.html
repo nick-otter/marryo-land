@@ -36,6 +36,7 @@ var jump = function(){
     console.log(yPos)
     draw();
     if(counter>5){clearInterval(jump)}
+    else{counter++}
   }
 
 // var stopJump = function(func) {
@@ -64,11 +65,11 @@ function move(e){
   //   setTimeout(function(){clearInterval(window.jump);},2000)
   //   //stopJump(jump)
   // }
-    var x=setInterval(function(){
-    // whatever code
-    if(counter > 5) clearInterval(x);
-    counter++;
-    }, 1000);}
+    // var x=setInterval(function(){
+    // // whatever code
+    // if(counter > 5) clearInterval(x);
+    // counter++;
+    setInterval(jump,100)}
     // console.log("wow!")
     // setInterval(function() {
     //   console.log("hey")
