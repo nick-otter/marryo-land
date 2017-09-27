@@ -27,8 +27,6 @@ Character.prototype.move= function (e){
 // To find keyCode uncomment below:
 // alert(e.keyCode)
 
-// move right
-console.log(e);
 
 this.keyCode = e.keyCode;
 
