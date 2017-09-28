@@ -4,10 +4,13 @@ var context = canvas.getContext('2d');
 
 // makes coin
 function coin (){
+  this.xcoinpos = 200
+  this.ycoinpos = 100
   context.beginPath(0, 400);
   context.fillStyle = ("white");
   context.beginPath();
-  context.arc(200,100,20,0,2*Math.PI);
+  context.arc(xcoinpos,ycoinpos,20,0,2*Math.PI);
+  console.log(xcoinpos)
   context.fillStyle = "white";
   context.stroke();
   context.closePath();
