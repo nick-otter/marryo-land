@@ -4,8 +4,7 @@ var context = canvas.getContext('2d');
 
 // makes coin
 
-function coin (){
-
+var coin = function (){
   context.beginPath(0, 400);
   context.fillStyle = ("white");
   context.beginPath();
@@ -14,19 +13,28 @@ function coin (){
   context.stroke();
   context.closePath();
   context.fill();
-
 };
 
-coin();
-// Renders circle and line assets
-var mario = new Character
-// console.log(coin)
-line();
+var line = function (){
+  context.beginPath();
+  context.moveTo(0, 400);
+  context.lineTo(900, 400);
+  context.stroke();
+};
+var drawChar = function(){
+  context.beginPath(0, 400);
+  context.fillStyle = ("black");
+  context.beginPath();
+  context.arc(mario.xPos, mario.yPos,20,0,2*Math.PI);
+  context.fillStyle = "black";
+  context.stroke();
+  context.closePath();
+  context.fill();
+}
 
 function moveandrender (){
-
   canvas.width=canvas.width;
-  var mario = new Character;
-  coin();
   line();
+  coin();
+  drawChar();
 };
