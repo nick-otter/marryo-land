@@ -3,14 +3,15 @@ var canvas = document.querySelector('#myCanvas');
 var context = canvas.getContext('2d');
 
 // makes coin
-function coin (){
+
+
+function drawCoin (){
   this.xcoinpos = 200
   this.ycoinpos = 100
   context.beginPath(0, 400);
   context.fillStyle = ("white");
   context.beginPath();
-  context.arc(xcoinpos,ycoinpos,20,0,2*Math.PI);
-  console.log(xcoinpos)
+  context.arc(coin.xcoinpos,coin.ycoinpos,20,0,2*Math.PI);
   context.fillStyle = "white";
   context.stroke();
   context.closePath();
@@ -44,6 +45,6 @@ context.stroke();
 function moveandrender (){
   canvas.width=canvas.width;
   line();
-  coin();
+  drawCoin();
   drawCharacter();
 };

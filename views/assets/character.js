@@ -1,4 +1,5 @@
 
+
 function Character (){
 this.jumping = false
 this.xPos = 30;
@@ -8,6 +9,7 @@ this.yPos = 370;
 Character.prototype.moveLeft = function(){
    this.xPos-=5;
    console.log(this)
+   console.log(coin.xcoinpos)
  };
 
 
@@ -28,6 +30,12 @@ Character.prototype.moveLeft = function(){
     }
      console.log(this)
    };
+
+   Character.prototype.collision = function () {
+    if (xpos === coin.xcoinpos){
+     alert("collision")
+      }
+ };
 
 
  Character.prototype._jumpMotion = function (amtToMove, stepDist, numOfUpSteps, isDown){
