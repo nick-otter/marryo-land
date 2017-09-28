@@ -35,6 +35,6 @@ Character.prototype.moveLeft = function(){
    if(isDown) { delay = stepDist*numOfUpSteps+70; upOrDown = -1 }
    setTimeout(function(){
      console.log(this)
-     this.yPos -= 4 * amtToMove * upOrDown;
+     self.yPos -= 4 * amtToMove * upOrDown;
    },(numOfUpSteps - amtToMove) * stepDist + delay)
  };
