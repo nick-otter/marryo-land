@@ -1,2 +1,7 @@
 // Move called on key to start game
-document.onkeydown = mario.move;
+// var mario = new Character
+//
+// document.onkeydown = mario.move;
+
+
+// setInterval(createinitalobjects(), 30);
