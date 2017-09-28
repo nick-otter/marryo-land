@@ -4,6 +4,7 @@ function Character (){
 this.jumping = false
 this.xPos = 30;
 this.yPos = 370;
+this.score = 0;
 };
 
 Character.prototype.moveLeft = function(){
@@ -45,8 +46,9 @@ Character.prototype.moveLeft = function(){
     //  console.log(this)
      self.yPos -= 4 * amtToMove * upOrDown;
        if (self.xPos === coin.xcoinpos && self.yPos === coin.ycoinpos){
-         alert("collision")
-         window.console.log(self.yPos)
+         self.score += 1
+         coin = null;
+         window.console.log(self.score)
        };
    },(numOfUpSteps - amtToMove) * stepDist + delay)
  };
