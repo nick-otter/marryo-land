@@ -2,7 +2,7 @@ var xPos = 30;
 var yPos = 370;
 
 function Character (){
-
+this.jumping = false
 // var c = document.getElementById("myCanvas");
 // var ctx = c.getContext("2d");
 
@@ -27,7 +27,6 @@ Character.prototype.move= function (e){
 // To find keyCode uncomment below:
 // alert(e.keyCode)
 
-
 this.keyCode = e.keyCode;
 
 if(this.keyCode!==38){
@@ -51,13 +50,14 @@ if(this.keyCode!==38){
 
  if(this.keyCode==38){
    for(var i = 0; i<10; i++){
-     jumpMotion(i,30,10,false)
-     jumpMotion(9-i,30,9,true);
+     _jumpMotion(i,30,10,false)
+     _jumpMotion(9-i,30,9,true);
    }
  }
+
 }
 
-var jumpMotion = function(amtToMove, stepDist, numOfUpSteps, isDown){
+var _jumpMotion = function(amtToMove, stepDist, numOfUpSteps, isDown){
   var delay = 0, upOrDown=1
   if(isDown) { delay = stepDist*numOfUpSteps+70; upOrDown = -1 }
   setTimeout(function(){
