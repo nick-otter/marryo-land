@@ -1,3 +1,6 @@
+var assert = chai.assert
+
+
 beforeEach(function() {
   var character = new Character;
   var canvas = document.querySelector('#myCanvas');
@@ -9,16 +12,38 @@ beforeEach(function() {
 
 describe('Character', function() {
 
-//   describe('#init', function() {
-//     it('it draws the character when instantiated', function(){
-//       expect(character).to.be.instanceof(Character);
-//     });
-//   });
+  describe('#init', function() {
+    it('xPos position on canvas is defined', function(){
+      var character =  new Character;
+      assert.equal(character.xPos, 30);
+    });
+    it('yPos position on canvas is defined', function(){
+      var character =  new Character;
+      assert.equal(character.yPos, 370);
+    });
+  });
 
-  describe('#move', function() {
-    it('it moves the character left', function(){
-      character.move.keyCode = 39;
-      assert.equal(xPos, 35);
+  describe('#moveLeft', function() {
+    it('it moves the character to the left', function(){
+      var character =  new Character
+      character.moveLeft();
+      assert.equal(character.xPos, 25);
+    });
+  });
+
+  describe('#moveRight', function() {
+    it('it moves the character to the right', function(){
+      var character =  new Character
+      character.moveRight();
+      assert.equal(character.xPos, 35);
+    });
+  });
+
+  describe('#moveDown', function() {
+    it('it moves the character down', function(){
+      var character =  new Character
+      character.moveDown();
+      assert.equal(character.yPos, 375);
     });
   });
 
