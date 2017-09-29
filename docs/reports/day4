@@ -1,0 +1,25 @@
+##Day 4 report
+
+
+Post-apocalypse solar eclipse.
+
+Planned to achieve:
+
+Refactor - OOD JS.With controller and encapsulation.
+Collision.
+Testing.
+
+
+Code Completed:
+
+Collision. Coin disappears and score is incremented.
+Refactoring to try to encapsulate code.
+
+
+Code not completed:
+
+Testing ....
+
+Code for Review:
+
+Found in this repo. Excpet will's jump stuff folder .. this has been added to the rest of the code.
