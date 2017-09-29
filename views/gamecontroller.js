@@ -1,4 +1,5 @@
 var mario = new Character
+var coin = new Coin
 
 setInterval(moveandrender,30);
 
