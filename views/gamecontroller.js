@@ -1,6 +1,3 @@
-var myInterval = setInterval(function(){
-     clearInterval(myInterval);
-},50);
 
 var mario = new Character
 var coin = new Coin
