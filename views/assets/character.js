@@ -5,6 +5,7 @@ this.jumping = false
 this.xPos = 30;
 this.yPos = 370;
 this.score = 0;
+this.jumpTracker = [];
 };
 
 Character.prototype.moveLeft = function(){
@@ -29,7 +30,6 @@ Character.prototype.moveLeft = function(){
       this._jumpMotion(i,30,10,false)
       this._jumpMotion(9-i,30,9,true);
     }
-
    };
 
    Character.prototype.collision = function () {
@@ -45,6 +45,7 @@ Character.prototype.moveLeft = function(){
    setTimeout(function(){
     //  console.log(this)
      self.yPos -= 4 * amtToMove * upOrDown;
+     self.jumpTracker.push(self.yPos);
        if (self.xPos === coin.xcoinpos && self.yPos === coin.ycoinpos){
          self.score += 1
          coin = null;

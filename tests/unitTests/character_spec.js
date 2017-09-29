@@ -1,4 +1,5 @@
 var assert = chai.assert
+var expect = chai.expect
 
 
 beforeEach(function() {
@@ -44,6 +45,23 @@ describe('Character', function() {
       var character =  new Character
       character.moveDown();
       assert.equal(character.yPos, 375);
+    });
+  });
+
+  describe('#jump', function() {
+    it('it makes the character jump', function(){
+      var character =  new Character
+      character.jump();
+      setTimeout( function() {
+      assert.equal(character.jumpTracker.length, 20)}, 1000)
+    });
+  });
+
+  describe('#collision', function() {
+    it('it makes the character jump', function(){
+      var character =  new Character
+      character.jump();
+      assert.equal(character.yPos, 370);
     });
   });
 
