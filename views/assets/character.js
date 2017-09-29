@@ -46,10 +46,14 @@ Character.prototype.moveLeft = function(){
     //  console.log(this)
      self.yPos -= 4 * amtToMove * upOrDown;
      self.jumpTracker.push(self.yPos);
+     if (coin){
        if (self.xPos === coin.xcoinpos && self.yPos === coin.ycoinpos){
          self.score += 1
-         coin = null;
          window.console.log(self.score)
+        //  document.getElementById("score").innerHTML = self.score
+         coin = null
+        //  coin = null;
        };
+     };
    },(numOfUpSteps - amtToMove) * stepDist + delay)
  };

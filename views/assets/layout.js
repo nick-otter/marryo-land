@@ -45,6 +45,13 @@ context.stroke();
 function moveandrender (){
   canvas.width=canvas.width;
   line();
-  drawCoin();
+  if (coin) {drawCoin();}
   drawCharacter();
+  document.getElementById("score").innerHTML = mario.score
 };
+
+function printendpage (){
+  var canvas = document.querySelector('#myCanvas');
+  // alter.("winner")
+  //  document.getElementById("myCanvas").innerHTML = "end"
+}
