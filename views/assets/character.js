@@ -1,11 +1,11 @@
 
 
 function Character (){
-this.jumping = false
-this.xPos = 30;
-this.yPos = 370;
-this.score = 0;
-this.jumpTracker = [];
+  this.jumping = false
+  this.xPos = 30;
+  this.yPos = 370;
+  this.score = 0;
+  this.jumpTracker = [];
 };
 
 Character.prototype.moveLeft = function(){
@@ -32,11 +32,6 @@ Character.prototype.moveLeft = function(){
     }
    };
 
-   Character.prototype.collision = function () {
-    if (xpos === coin.xcoinpos){
-     alert("collision")
-      }
- };
 
 
  Character.prototype._jumpMotion = function (amtToMove, stepDist, numOfUpSteps, isDown){
