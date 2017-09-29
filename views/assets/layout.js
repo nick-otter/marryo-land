@@ -52,6 +52,13 @@ function moveandrender (){
 
 function printendpage (){
   canvas.width=canvas.width
+  context.fillStyle='white';
+  context.fillRect(0,0,canvas.width,canvas.height);
+  context.fillStyle = "blue";
+  context.font = "bold 44px Arial";
+  context.fillText("Wooooo! Game is OVER - " + mario.score + " points", 100, (canvas.height / 2) + 8);
+  document.getElementById("score").innerHTML = ""
+
   // var canvas = document.querySelector('#myCanvas');
   // alter.("winner")
   //  document.getElementById("myCanvas").innerHTML = "end"

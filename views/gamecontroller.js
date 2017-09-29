@@ -1,7 +1,3 @@
-var myInterval = setInterval(function(){
-     clearInterval(myInterval);
-},50);
-
 var mario = new Character
 var coin = new Coin
 
@@ -12,7 +8,7 @@ var coin = new Coin
     moveandrender();
     console.log(intervalRunner)
     clearInterval(intervalRunner)
-    setTimeout(printendpage,500);}
+    setTimeout(printendpage,1500);}
 }, 30)
 // Move called on key to start game
 document.onkeydown = checkKey;
