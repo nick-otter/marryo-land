@@ -33,22 +33,11 @@ Character.prototype.moveLeft = function(){
    };
 
 
-
  Character.prototype._jumpMotion = function (amtToMove, stepDist, numOfUpSteps, isDown){
    var delay = 0, upOrDown=1, self = this;
    if(isDown) { delay = stepDist*numOfUpSteps+70; upOrDown = -1 }
    setTimeout(function(){
-    //  console.log(this)
      self.yPos -= 4 * amtToMove * upOrDown;
      self.jumpTracker.push(self.yPos);
-     if (coin){
-       if (self.xPos === coin.xcoinpos && self.yPos === coin.ycoinpos){
-         self.score += 1
-         window.console.log(self.score)
-        //  document.getElementById("score").innerHTML = self.score
-         coin = null
-        //  coin = null;
-       };
-     };
    },(numOfUpSteps - amtToMove) * stepDist + delay)
  };
