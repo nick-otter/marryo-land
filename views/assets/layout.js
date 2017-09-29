@@ -51,7 +51,8 @@ function moveandrender (){
 };
 
 function printendpage (){
-  var canvas = document.querySelector('#myCanvas');
+  canvas.width=canvas.width
+  // var canvas = document.querySelector('#myCanvas');
   // alter.("winner")
   //  document.getElementById("myCanvas").innerHTML = "end"
 }

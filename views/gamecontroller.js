@@ -1,12 +1,18 @@
-
+var myInterval = setInterval(function(){
+     clearInterval(myInterval);
+},50);
 
 var mario = new Character
 var coin = new Coin
 
 // console.log(mario.score, "snakes")
-setInterval(function(){
+  var intervalRunner = setInterval(function(){
   if (mario.score < 1){moveandrender();}
-  else { printendpage();}
+  else {
+    moveandrender();
+    console.log(intervalRunner)
+    clearInterval(intervalRunner)
+    setTimeout(printendpage,500);}
 }, 30)
 // Move called on key to start game
 document.onkeydown = checkKey;
