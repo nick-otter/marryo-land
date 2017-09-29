@@ -10,7 +10,7 @@
     <canvas id="myCanvas" width="900" height="550" style="border:1px solid #d3d3d3;">
     Your browser does not support the HTML5 canvas tag.</canvas>
 
-    
+
     <div id="mocha"></div>
     <script src="../node_modules/mocha/mocha.js"></script>
     <script src="../node_modules/chai/chai.js"></script>
@@ -18,13 +18,14 @@
 
     <!-- load code you want to test here -->
     <script src="assets/character.js"> </script>
-    <script src="assets/line.js"> </script>
     <script src="assets/layout.js"> </script>
+
 
 
 
     <!-- load your test files here -->
     <script src="../tests/unitTests/character_spec.js"> </script>
+    <script src="../tests/unitTests/controller_spec.js"> </script>
 
     <script>
       mocha.run();

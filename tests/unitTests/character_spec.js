@@ -5,8 +5,6 @@ var expect = chai.expect
 beforeEach(function() {
   var canvas = document.querySelector('#myCanvas');
   var context = canvas.getContext('2d');
-  var xPos = 30;
-  var yPos = 370;
 });
 
 
