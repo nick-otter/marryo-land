@@ -11,3 +11,13 @@ canvas {
   font-size: 200%;
   text-align: center;
 }
+
+#end {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 100px;
+  top: 270px;
+  font-size: 200%;
+  text-align: center;
+}

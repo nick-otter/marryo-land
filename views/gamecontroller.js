@@ -1,8 +1,13 @@
+
+
 var mario = new Character
 var coin = new Coin
 
-setInterval(moveandrender,30);
-
+// console.log(mario.score, "snakes")
+setInterval(function(){
+  if (mario.score < 1){moveandrender();}
+  else { printendpage();}
+}, 30)
 // Move called on key to start game
 document.onkeydown = checkKey;
 
